@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#titolo{
+    color: white;
+    position: absolute;
+    top: 2rem;
+}
+.containerSlide{
+    min-width: 70vw;
+    min-height: 70vh;
+    background: linear-gradient( to right, #11889e, #38ef7d);
+    display: flex;
+    
+
+}
+
+#slidePrimary{
+    min-width: 55vw;
+    height: 70vh;
+    background-color: red;
+
+}
+
+#slides{
+    min-width: 15vw;
+    height: 70vh;
+    background-color: blue;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.imgPrimary{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imgSecondary{
+    width: 100%;
+    height: calc(100% / 5);
+    object-fit: cover;
+}
+
+
+/***** BUTTOS **********/
+
+.containerButton{
+    width: 35%;
+    height: 3rem;
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    position: absolute;
+    left: 26rem;
+    top: 43rem;
+}
+
+.button{
+    color: #808080;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    left: 50%;
+}
